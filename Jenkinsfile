@@ -1,8 +1,6 @@
 pipeline {
   agent {
-    kubernetes {
-      defaultContainer 'jnlp'
-    }
+    label "jenkins-maven"
   }
   environment {
     ORG = 'testinghkaabg'
